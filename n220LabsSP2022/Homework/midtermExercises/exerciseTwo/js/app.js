@@ -41,10 +41,10 @@ score.style.color = "#ffffff"
 score.innerHTML = scoreNum;
 document.body.appendChild(score);
 
-function getRandomNum(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
+let randomNum = 0;
+
+function getRandomNum() {
+    randomNum = (Math.floor(Math.random() * 3) + 1);
   }
 
 // 1 is rock
@@ -52,23 +52,26 @@ function getRandomNum(min, max) {
 // 3 is scissors
 
 function change1(){
-    console.log(getRandomNum(1,3));
+    getRandomNum();
 
-    if (getRandomNum() == 1){
+    if (randomNum == 1){
         scoreNum =+ 0;
+        score.innerHTML = scoreNum;
     }
 
     if (getRandomNum() == 2){
         scoreNum =- 1;
+        score.innerHTML = scoreNum;
     }
 
     if (getRandomNum() == 3){
         scoreNum =+ 1;
+        score.innerHTML = scoreNum;
     }
 }
 
 function change2(){
-    console.log(getRandomNum(1,3));
+    getRandomNum();
 
     if (getRandomNum() == 1){
         scoreNum =+ 1;
@@ -84,7 +87,7 @@ function change2(){
 }
 
 function change3(){
-    console.log(getRandomNum(1,3));
+    getRandomNum();
 
     if (getRandomNum() == 1){
         scoreNum =- 1;
@@ -101,4 +104,5 @@ function change3(){
 
 function change4(){
     scoreNum =- .5;
+    score.innerHTML = scoreNum;
 }
