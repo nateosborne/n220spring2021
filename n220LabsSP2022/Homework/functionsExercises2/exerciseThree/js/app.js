@@ -5,8 +5,8 @@ function clean(){
     let word = txt.value;
     for (i=0;i<=word.length-1;i++){
         if (word[i]=="#"){
-            newWord = word.replace(/#/g,"");
-            console.log(newWord);
+            let newWord = word.replace(/#/g,"");
+            output.innerHTML = newWord;
         }
     }
 }
