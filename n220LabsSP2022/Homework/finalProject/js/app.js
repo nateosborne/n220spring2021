@@ -13,6 +13,8 @@ let sum = pnum1+pnum2;
 let dnum = dnum1+dnum2;
 
 let result = document.getElementById("result");
+let playerNum = document.getElementById("playerNum");
+let dealerNum = document.getElementById("dealerNum");
 
 
 function game(){
@@ -20,6 +22,8 @@ function game(){
 
     pcard1.innerHTML = pnum1;
     pcard2.innerHTML = pnum2;
+
+    playerNum.innerHTML = sum;
 }
 
 function hit(){
@@ -41,10 +45,12 @@ function hit(){
     document.body.appendChild(newCard);
 
     sum += pnum3;
-    console.log(sum);
+    playerNum.innerHTML = sum;
 
     if (sum > 21){
         result.innerHTML = "You Lose!";
+        dcard2.innerHTML = dnum2;
+        dealerNum.innerHTML = dnum;
     }
 }
 
@@ -52,9 +58,11 @@ function stay(){
     if (dnum <= 21 && sum > dnum && sum <= 21){
         result.innerHTML = "You Win!";
         dcard2.innerHTML = dnum2;
+        dealerNum.innerHTML = dnum;
     }
     else{
         result.innerHTML = "You Lose!";
         dcard2.innerHTML = dnum2;
+        dealerNum.innerHTML = dnum;
     }
 }
