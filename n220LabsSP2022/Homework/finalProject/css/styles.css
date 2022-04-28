@@ -1,0 +1,98 @@
+#start{
+    background-color: gold;
+    border: 4px black solid;
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+#result{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.dealer-container{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#dcard1{
+    height: 150px;
+    width: 100px;
+    background-color: darkred;
+    border: 10px solid gray;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dcard2{
+    height: 150px;
+    width: 100px;
+    background-color: darkred;
+    border: 10px solid gray;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-container{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#pcard1{
+    height: 150px;
+    width: 100px;
+    background-color: darkred;
+    border: 10px solid gray;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pcard2{
+    height: 150px;
+    width: 100px;
+    background-color: darkred;
+    border: 10px solid gray;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    width: 275px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hit{
+    width: 70px;
+    height: 40px;
+    background-color: #0fd945;
+}
+
+#stay{
+    width: 70px;
+    height: 40px;
+    background-color: gray;
+}
